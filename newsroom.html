@@ -49,22 +49,98 @@
                 <input type="text" placeholder="검색" class="search-input">
             </div>
             <h2 class="section-title">뉴스룸</h2>
-            <div class="news-list">
-                <article class="news-item">
-                    <div class="news-date">2025.02.01</div>
-                    <h3>신제품 출시 발표</h3>
-                    <p>새로운 버전의 제품이 출시되었습니다. 많은 기능 개선과 업그레이드가 포함되었습니다.</p>
+            
+            <!-- Newsroom Layout -->
+            <div style="display: grid; grid-template-columns: 250px 1fr 250px; gap: 2rem; margin-top: 2rem;">
+                
+                <!-- Left Sidebar -->
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <article style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;">
+                        <a href="#" style="text-decoration: none; color: inherit; display: block;">
+                            <div style="padding: 1rem;">
+                                <span style="color: #00d4ff; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em;">주요 뉴스</span>
+                                <div style="margin-top: 0.75rem; background: white; border-radius: 8px; overflow: hidden;">
+                                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 2rem 1rem; display: flex; align-items: center; justify-content: center;">
+                                        <div style="text-align: center; color: white; font-size: 1.5rem;">🚀</div>
+                                    </div>
+                                </div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-top: 0.75rem; color: #1a1a1a;">신제품 출시 발표</h4>
+                                <p style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">2025년 2월 1일</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;">
+                        <a href="#" style="text-decoration: none; color: inherit; display: block;">
+                            <div style="padding: 1rem;">
+                                <span style="color: #7c3aed; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em;">LX2 소개</span>
+                                <div style="margin-top: 0.75rem; background: white; border-radius: 8px; overflow: hidden;">
+                                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 2rem 1rem; display: flex; align-items: center; justify-content: center;">
+                                        <img src="assets/logo_lx2.png" alt="LX2" style="height: 30px; filter: brightness(0) invert(1);">
+                                    </div>
+                                </div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-top: 0.75rem; color: #1a1a1a;">LX2는 더 이상 제품이 아닙니다</h4>
+                                <p style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">2025년 7월 14일</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Main Featured Article -->
+                <article style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+                    <a href="article-sw-award.html" style="text-decoration: none; color: inherit; display: block;">
+                        <div style="position: relative; cursor: pointer; transition: transform 0.2s; overflow: hidden;">
+                            <img src="assets/articles/sw대상.png" alt="신SW상품대상" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div style="padding: 2rem; background: rgba(240, 147, 251, 0.02); border-top: 1px solid rgba(240, 147, 251, 0.1);">
+                            <h2 style="font-size: 1.5rem; font-weight: 700; line-height: 1.4; color: #1a1a1a; margin: 0 0 1rem 0;">신SW상품대상<br/>멀티미디어&서비스SW 부문 수상</h2>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <div style="font-size: 0.9rem; color: #666;">2025년 6월</div>
+                                </div>
+                            </div>
+                            
+                            <p style="font-size: 1rem; line-height: 1.8; color: #333;">
+                                과학기술정보통신부 주최, 전자신문 주관 '2025년 6월 신SW상품대상' 멀티미디어&서비스SW 부문 수상. AI 기반 맞춤형 학습관리시스템으로 교육 프로세스 일원화를 실현했습니다.
+                            </p>
+                            
+                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0; text-align: center; color: #999;">
+                                자세히 보기 →
+                            </div>
+                        </div>
+                    </a>
                 </article>
-                <article class="news-item">
-                    <div class="news-date">2025.01.20</div>
-                    <h3>파트너십 체결</h3>
-                    <p>글로벌 기업과의 전략적 파트너십을 체결했습니다.</p>
-                </article>
-                <article class="news-item">
-                    <div class="news-date">2024.12.15</div>
-                    <h3>수상 소식</h3>
-                    <p>2024년 우수 기업상을 수상했습니다.</p>
-                </article>
+
+                <!-- Right Sidebar -->
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <article style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05);">
+                        <a href="article-gs-certification.html" style="text-decoration: none; color: inherit; display: block;">
+                            <div style="position: relative; height: 140px; overflow: hidden;">
+                                <img src="assets/articles/gs인증.png" alt="GS인증" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                            <div style="padding: 1rem;">
+                                <span style="color: #667eea; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em;">인증</span>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-top: 0.5rem; color: #1a1a1a;">GS인증 1등급 획득</h4>
+                                <p style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">2025년 9월 12일</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article style="background: #f8f9fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;">
+                        <a href="#" style="text-decoration: none; color: inherit; display: block;">
+                            <div style="padding: 1rem;">
+                                <span style="color: #00d4ff; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em;">파트너십</span>
+                                <div style="margin-top: 0.75rem; background: white; border-radius: 8px; overflow: hidden;">
+                                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 2rem 1rem; display: flex; align-items: center; justify-content: center;">
+                                        <div style="text-align: center; color: white; font-size: 1.5rem;">🤝</div>
+                                    </div>
+                                </div>
+                                <h4 style="font-size: 0.9rem; font-weight: 600; margin-top: 0.75rem; color: #1a1a1a;">글로벌 파트너십 체결</h4>
+                                <p style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">2025년 1월 20일</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
         </main>
     </div>
