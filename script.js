@@ -13,6 +13,7 @@ function loadSidebar() {
         .then(html => {
             sidebarContainer.innerHTML = html;
             setActiveSidebarItem();
+            initReleaseModal();
         })
         .catch(error => {
             console.error('Error loading sidebar:', error);
@@ -33,6 +34,7 @@ function loadSidebarFallback() {
             if (xhr.status === 200 || xhr.status === 0) {
                 sidebarContainer.innerHTML = xhr.responseText;
                 setActiveSidebarItem();
+                initReleaseModal();
             } else {
                 console.error('Failed to load sidebar with fallback method');
             }
@@ -323,5 +325,44 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initTOC);
 } else {
     initTOC();
+}
+
+// Release Notes Modal Functions
+function initReleaseModal() {
+    const versionBadge = document.getElementById('version-badge');
+    const releaseModal = document.getElementById('release-modal');
+    const closeModal = document.getElementById('close-modal');
+    
+    if (!versionBadge || !releaseModal || !closeModal) return;
+    
+    // 버전 배지 클릭 시 모달 열기
+    versionBadge.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        releaseModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // 닫기 버튼 클릭 시 모달 닫기
+    closeModal.addEventListener('click', function() {
+        releaseModal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    });
+    
+    // 모달 외부 클릭 시 닫기
+    releaseModal.addEventListener('click', function(e) {
+        if (e.target === releaseModal) {
+            releaseModal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // ESC 키로 모달 닫기
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && releaseModal.classList.contains('show')) {
+            releaseModal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+    });
 }
 
