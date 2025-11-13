@@ -305,12 +305,12 @@ body {
 /* Sidebar */
 .sidebar {
     position: sticky;   
-    top: 100px;
+    top: 20px;
     height: fit-content;
 }
 
 .sidebar-logo {
-    margin-bottom: 1.5rem;
+    margin-bottom:3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -359,7 +359,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .sidebar-nav {
