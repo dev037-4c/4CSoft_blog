@@ -13,7 +13,7 @@ const allArticlesData = [
 
     // 사용자 중심 학습관리 (features.html)
     { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '편리한 수강신청', description: '과정 찾기부터 일정 관리까지, 학습자가 직접 탐색하고 선택하는 완결된 학습 흐름', badge: '교육', link: 'article-convenient-enrollment.html', thumbnail: 'assets/thumbnails/편리한수강신청.png' },
-    { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '사용자 맞춤형 대시보드', description: '로그인 한 번으로 학습 이력, 일정, 강의실, 수료증까지 연결되는 개인화된 학습 공간', badge: '교육', link: 'article-dashboard.html', thumbnail: 'assets/thumbnails/사용자맞춤형대시보드.png' },
+    { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '사용자 맞춤형 대시보드', description: '로그인 한 번으로 학습 이력, 일정, 강의실, 수료증까지 연결되는 개인화된 학습 공간', badge: '교육', link: 'article-dashboard.html', thumbnail: 'assets/thumbnails/맞춤형대시보드.png' },
     { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '온·오프 통합 강의실', description: '온라인, 오프라인 강의 통합 관리', badge: '교육', link: 'article-integrated-classroom.html', thumbnail: 'assets/thumbnails/온오프통합강의실.png' },
     { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '학습 커뮤니티', description: '학습자간 소통, 지식 공유', badge: '교육', link: 'article-learning-community.html', thumbnail: 'assets/thumbnails/학습커뮤니티.png' },
     { page: 'features.html', pageTitle: '사용자 중심 학습관리', title: '학습 마일리지·쿠폰·이벤트', description: '학습 동기부여, 리워드 시스템', badge: '교육', link: 'article-learning-rewards.html', thumbnail: 'assets/thumbnails/학습마일리지:쿠폰:이벤트.png' },
