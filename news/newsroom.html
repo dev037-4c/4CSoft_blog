@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스룸 - LX2 블로그</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../assets/logo_lx2.png" alt="LX2 Logo" class="sidebar-logo-img">
+                </a>
+            </div>
+            <h2 class="sidebar-title">블로그</h2>
+            <nav class="sidebar-nav">
+                <a href="../index.html" class="sidebar-item" data-page="index">
+                    홈
+                </a>
+                <a href="../ai/insights.html" class="sidebar-item" data-page="insights">
+                    AI 교육기술 
+                </a>
+                <a href="../user/features.html" class="sidebar-item" data-page="features">
+                    사용자 중심 학습관리
+                </a>
+                <a href="../manage/portfolio.html" class="sidebar-item" data-page="portfolio">
+                    디테일한 교육관리
+                </a>
+                <a href="../solution/tips.html" class="sidebar-item" data-page="tips">
+                    가성비의 전문 솔루션
+                </a>
+                <a href="newsroom.html" class="sidebar-item active" data-page="newsroom">
+                    뉴스룸
+                </a>
+                <a href="../update/dev-update.html" class="sidebar-item" data-page="dev-update">
+                    업데이트 정보
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <div class="search-box">
+                <img src="../assets/돋보기.png" alt="검색" class="search-icon">
+                <input type="text" placeholder="검색" class="search-input">
+            </div>
+            <h2 class="section-title">뉴스룸</h2>
+            
+            <!-- Newsroom Layout -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                
+                <!-- Left: Main Featured Article -->
+                <article style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); height: fit-content;">
+                    <a href="article-sw-competition.html" style="text-decoration: none; color: inherit; display: block;">
+                        <div style="position: relative; cursor: pointer; transition: transform 0.2s; overflow: hidden;">
+                            <img src="../assets/articles/sw대상.png" alt="신SW상품대상" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div style="padding: 2rem; background: rgba(240, 147, 251, 0.02); border-top: 1px solid rgba(240, 147, 251, 0.1);">
+                            <h2 style="font-size: 1.5rem; font-weight: 700; line-height: 1.4; color: #1a1a1a; margin: 0 0 1rem 0;">신SW상품대상<br/>멀티미디어&서비스SW 부문 수상</h2>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <div style="font-size: 0.9rem; color: #666;">2025년 6월</div>
+                                </div>
+                            </div>
+                            
+                            <p style="font-size: 1rem; line-height: 1.8; color: #333;">
+                                과학기술정보통신부 주최, 전자신문 주관 '2025년 6월 신SW상품대상' 멀티미디어&서비스SW 부문 수상. AI 기반 맞춤형 학습관리시스템으로 교육 프로세스 일원화를 실현했습니다.
+                            </p>
+                            
+                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0; text-align: center; color: #999;">
+                                자세히 보기 →
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Right: 4 Cards Grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; grid-auto-rows: 1fr;">
+                    
+                    <!-- Card 1: AI 다국어 학생 상담 기능 -->
+                    <article style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.2s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <a href="article-ai-counseling.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                            <div style="position: relative; height: 180px; overflow: hidden;">
+                                <img src="../assets/articles/뉴스룸학생상담.png" alt="AI 다국어 학생 상담" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                            <div style="padding: 0.875rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <span style="color: #8b5cf6; font-weight: 600; font-size: 0.7rem; letter-spacing: 0.05em;">AI 기능</span>
+                                    <h4 style="font-size: 0.875rem; font-weight: 600; margin: 0.5rem 0 0 0; color: #1a1a1a; line-height: 1.4;">AI 다국어 학생 상담 기능</h4>
+                                </div>
+                                <p style="font-size: 0.7rem; color: #666; margin: 0;">2025년 8월 14일</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card 2: GS인증 1등급 획득 -->
+                    <article style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.2s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <a href="article-gs-certification.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                            <div style="position: relative; height: 180px; overflow: hidden;">
+                                <img src="../assets/articles/gs인증.png" alt="GS인증" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                            <div style="padding: 0.875rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <span style="color: #667eea; font-weight: 600; font-size: 0.7rem; letter-spacing: 0.05em;">인증</span>
+                                    <h4 style="font-size: 0.875rem; font-weight: 600; margin: 0.5rem 0 0 0; color: #1a1a1a; line-height: 1.4;">GS인증 1등급 획득</h4>
+                                </div>
+                                <p style="font-size: 0.7rem; color: #666; margin: 0;">2025년 9월 12일</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card 3: AI 다국어 학습 문의 및 답변 기능 -->
+                    <article style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.2s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <a href="article-ai-multilingual-qa-news.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                            <div style="position: relative; height: 180px; overflow: hidden;">
+                                <img src="../assets/articles/다국어Q&A.png" alt="AI 다국어 학습 문의·답변" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                            <div style="padding: 0.875rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <span style="color: #06b6d4; font-weight: 600; font-size: 0.7rem; letter-spacing: 0.05em;">AI 기능</span>
+                                    <h4 style="font-size: 0.875rem; font-weight: 600; margin: 0.5rem 0 0 0; color: #1a1a1a; line-height: 1.4;">AI 다국어 학습 문의·답변 기능</h4>
+                                </div>
+                                <p style="font-size: 0.7rem; color: #666; margin: 0;">2025년 8월 14일</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Card 4: 벤처기업혁신상 수상 -->
+                    <article style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.2s; cursor: pointer; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <a href="article-sw-award.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                            <div style="position: relative; height: 180px; overflow: hidden;">
+                                <img src="../assets/articles/벤처기업.png" alt="벤처기업혁신상 수상" style="width: 100%; height: 100%; object-fit:contain; display: block;">
+                            </div>
+                            <div style="padding: 0.875rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <span style="color: #f59318; font-weight: 600; font-size: 0.7rem; letter-spacing: 0.05em;">수상</span>
+                                    <h4 style="font-size: 0.875rem; font-weight: 600; margin: 0.5rem 0 0 0; color: #1a1a1a; line-height: 1.4;">벤처기업혁신상 수상</h4>
+                                </div>
+                                <p style="font-size: 0.7rem; color: #666; margin: 0;">2024년</p>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Development Update Link Section -->
+            <div style="margin-top: 4rem; text-align: center; padding: 3rem; background: #EFF1FF; border-radius: 16px;">
+                <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; color: #5850EE;">LX2를 무료로 체험해보세요.</p>
+                <h2 style="font-size: 2.2rem; color: black; margin-bottom: 2rem;">써보면서 이해하는 게 가장 빠릅니다</h2>
+                <a href="https://www.lx2.kr/common/greeting.do" target="_blank" style="display: inline-block; background: #594CEE; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    LX2 바로 체험하기
+                </a>
+            </div>
+
+        </main>
+
+
+    <script src="../articles-data.js"></script>
+    <script src="../script.js"></script>
+    <script></script>
+</body>
+</html>
+
